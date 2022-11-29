@@ -7,6 +7,7 @@ import { Injectable } from '@angular/core';
 export class ApiService {
 
   constructor(private http:HttpClient) { }
-  fetchPassenger=()=>{return this.http.get("https://dummyjson.com/todos")}
+  fetchToDos=()=>{return this.http.get("https://dummyjson.com/todos")}
   fetchQuotes=()=>{return this.http.get("https://dummyjson.com/quotes")}
+  fetchPassenger=()=>{return this.http.get("https://api.instantwebtools.net/v1/passenger?page=0&size=30")}
 }

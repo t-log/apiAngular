@@ -8,7 +8,7 @@ import { ApiService } from '../api.service';
 })
 export class TodoViewComponent {
 
-  constructor(private api:ApiService){api.fetchPassenger().subscribe(
+  constructor(private api:ApiService){api.fetchToDos().subscribe(
     (response)=>{this.todoData=response}
   )}
 
