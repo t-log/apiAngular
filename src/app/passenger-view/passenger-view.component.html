@@ -1,0 +1,20 @@
+<div class="container">
+    <div class="row">
+        <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+            <div class="row g-3">
+                <div *ngFor="let i of passengerData.data" class="col-4 col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4 col-xxl-4">
+                    <div class="card">
+                        <img src="{{i.airline[0].logo}}" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">{{i.airline[0].name}}</h5>
+                          <p class="card-text">{{i.airline[0].country}}</p>
+                          <p class="card-text">{{i.airline[0].slogan}}</p>
+                          <p class="card-text">{{i.airline[0].headquarters}}</p>
+                          <a class="btn btn-primary">{{i.airline[0].website}}</a>
+                        </div>
+                      </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
