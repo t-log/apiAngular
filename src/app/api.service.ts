@@ -8,4 +8,5 @@ export class ApiService {
 
   constructor(private http:HttpClient) { }
   fetchPassenger=()=>{return this.http.get("https://dummyjson.com/todos")}
+  fetchQuotes=()=>{return this.http.get("https://dummyjson.com/quotes")}
 }

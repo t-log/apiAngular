@@ -12,13 +12,15 @@ import { ProductsViewComponent } from './products-view/products-view.component';
 import { UsersTwoComponent } from './users-two/users-two.component';
 import { TodoViewComponent } from './todo-view/todo-view.component';
 import { HttpClientModule } from '@angular/common/http';
+import { QuotesViewComponent } from './quotes-view/quotes-view.component';
 const myRoute:Routes=[{path:"",component:PassengerViewComponent},
                       {path:"public",component:PublicViewComponent},
                       {path:"pet",component:PetViewComponent},
                       {path:"user",component:UserViewComponent},
                       {path:"products",component:ProductsViewComponent},
                       {path:"userstwo",component:UsersTwoComponent},
-                      {path:"todo",component:TodoViewComponent},]
+                      {path:"todo",component:TodoViewComponent},
+                      {path:"quote",component:QuotesViewComponent},]
 
 @NgModule({
   declarations: [
@@ -29,7 +31,8 @@ const myRoute:Routes=[{path:"",component:PassengerViewComponent},
     UserViewComponent,
     ProductsViewComponent,
     UsersTwoComponent,
-    TodoViewComponent
+    TodoViewComponent,
+    QuotesViewComponent
   ],
   imports: [
     BrowserModule,
