@@ -12,4 +12,5 @@ export class ApiService {
   fetchPassenger=()=>{return this.http.get("https://api.instantwebtools.net/v1/passenger?page=0&size=30")}
   fetchPets=()=>{return this.http.get("https://api.publicapis.org/entries")}
   fetchProducts=()=>{return this.http.get("https://dummyjson.com/products")}
+  fetchPublic=()=>{return this.http.get("https://datausa.io/api/data?drilldowns=Nation&measures=Population")}
 }
